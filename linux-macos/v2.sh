@@ -89,7 +89,7 @@ echo "所有模块包含的分支($branch_length):"
 printf '  %s\n' "${branch_list[@]}"
 
 # 显示分支选项
-echo "可用现存分支:"
+echo "可用现存分支（若分支缺失请调整终端窗口的高度确保足够显示所有选项并重新执行）:"
 PS3="请选择要切换的分支 (输入数字): "
 select branch in "${branch_list[@]}"; do
   if [[ -n "$branch" ]]; then
